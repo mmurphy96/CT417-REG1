@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 import org.joda.time.DateTime;
 
-//Student Class - Name, age, dob, id, username
+//Self Note: Student Class - Name, age, dob, id, username
 public class Student {
 
 	private String name;
@@ -36,6 +36,10 @@ public class Student {
 	}
 	public void addStutoCourse(CourseProgramme course){
 		this.course = course;
+	}
+	public String toString(){
+		return "\n Name:"+ this.name +" Age:" + this.age + " Date of Birth:" + this.getDOB() + "\n ID:" +this.id + " Username:" + this.getUsername();
+		
 	}
 	public CourseProgramme getCourse(){
 		return this.course;

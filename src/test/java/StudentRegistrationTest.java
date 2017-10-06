@@ -8,13 +8,15 @@ public class StudentRegistrationTest {
 	@Test
 	public void test() {
 		
-		//Constructor from student Name, age, dob,id, 
-		DateTime dob = new DateTime(1996,10,01,0,0,0);
-		Student student = new Student("Michael Murphy",21,dob,11);
-		assertEquals("Michael Murphy21", student.getUsername());
-		System.out.println("Regestration Details" + student);
-		//This should result in "Michael Murphy21". if so the test passes 
+		//Note - Constructor from student - Name, age, dob,id, 
+		DateTime dob = new DateTime(1996,10,01,12,10,04);
+		Student student = new Student("MichaelMurphy",21,dob,11);
 		
-		//fix the print out
+		String expected = "MichaelMurphy21";
+	
+		assertEquals(expected, student.getUsername());
+		System.out.println("\n Registration Details" + student.toString());
+		//The username should result in "MichaelMurphy21" 
+		
 	}
 }
