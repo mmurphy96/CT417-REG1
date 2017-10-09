@@ -11,6 +11,7 @@ public class Student {
 	private int id;
 	private String username;
 	private CourseProgramme course;
+	
 	public Student (String name, int age, DateTime dob, int id){
 		this.name = name;
 		this.age = age;
@@ -45,9 +46,7 @@ public class Student {
 		return this.course;
 	}
     public ArrayList<Module> getModules(ArrayList<Module> modules) {
-       
     	ArrayList<Module> sModules = new ArrayList<Module>();
-     
         for (int j=0; j< modules.size(); j++) {
                 Module module = modules.get(j);
 
